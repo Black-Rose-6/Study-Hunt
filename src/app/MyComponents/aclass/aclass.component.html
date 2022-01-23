@@ -1,0 +1,37 @@
+<div class="mainnotes">
+    <div class="headernotes" style="background: url('/assets/Images/{{selectedclass.img}}.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <div class="notessubjecthead">{{selectedclass.name}}</div>
+        <div class="batch">{{selectedclass.batchname}}</div>
+    </div>
+    <div class="mainbodynotes">
+      <div class="announcementsection">
+        <div class="announceheader">Make Announcement</div>
+        <div class="announceform">
+          <textarea type="text" name="" class="notes" id="announcement" placeholder="Announce something in your class"></textarea>
+          <div class="makeannouncebtn" (click)="sendannounce()">Send Announcement</div>
+        </div>
+      </div>
+      <div class="uploadnotes" *ngIf="type == 'Tutor'">
+        <div class="uploadnotesheader">
+          Upload Notes
+        </div>
+        <div>
+          <form enctype="multipart/form-data" [formGroup]="submitform" class="notesform" (ngSubmit)="onSubmit()" novalidate >
+            <input formControlName="attachements" (change)="save($event)" type="file" class="fileuploadclass" name="attachements" multiple id="attachements">
+            <input type="submit" class="uploadfilesbtn" value="Upload Selected Files">
+          </form>
+        </div>
+      </div>
+      <div class="mainnotesbody" *ngFor="let indannounce of myannouncements">
+        <div class="notesheader">
+          <div class="mainnotessender" >{{indannounce.bywhom}}</div>
+          <div class="mainnotestime" >{{(indannounce.createdAt)}}</div>
+        </div>
+        <div class="mainnotesmessage" *ngIf="indannounce.attachments == null">{{indannounce.content}}</div>
+        <div class="mainnotesmessage" *ngIf="indannounce.content == ''">
+          <a target="_blank" href="https://tutormanagementapi.herokuapp.com/{{indannounce.attachements}}">{{(indannounce.attachements)}}</a>
+         <div class="addtofav" id="addtofav{{indannounce._id}}" (click)="addtofavs(indannounce._id)">Add to favourites</div>
+        </div>
+    </div>
+
+</div>

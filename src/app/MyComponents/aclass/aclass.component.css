@@ -1,0 +1,169 @@
+.mainbodynotes{
+    display: grid;
+    height: fit-content;
+    grid-gap: 10px;
+    /* overflow: scroll; */
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    /* margin-top: 20px; */
+}
+.announcementsection{
+  height: 31vh;
+  background-color: rgb(223, 223, 223);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+.makeannouncebtn{
+  display: grid;
+  align-content: center;
+  margin-right: 20px;
+  height: 50%;
+  background-color: #4242de;
+  color: white;
+  justify-self: end;
+  align-self: center;
+  width: 15%;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.makeannouncebtn:hover{
+  background-color: #3434a0;
+
+}
+.notes{
+  resize: none;
+  place-self: center;
+  width: 95%;
+  height: 100%;
+  background-color: #fdfdfd;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px, rgb(27 31 35 / 15%) 0px 0px 0px 1px;
+  outline: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.announceheader
+{
+    display: grid;
+    place-content: center;
+    font-size: larger;
+    font-weight: 500;
+}
+.announceform{
+  display: grid;
+}
+.uploadnotes{
+  height: 15vh;
+  background-color: rgb(223, 223, 223);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+
+}
+.mainnotesmessage{
+  position: relative;
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+}
+.addtofav{
+  display: grid;
+  place-content: center;
+  background-color: rgb(226, 226, 59);
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.addtofav:hover{
+  background-color: rgb(182, 182, 55);
+
+}
+.mainnotes{
+    display: grid;
+    /* grid-template-rows: 1.15fr 2fr; */
+    /* margin-left: 125px; */
+    width: 90%;
+    justify-self: center;
+    /* margin-right: 125px; */
+    height: fit-content;
+}
+.headernotes{
+    display: grid;
+    height: 30.273vh;
+    color: white;
+    align-content: end;
+    margin: 20px;
+    background: url('/assets/Images/maths.jpeg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 15px;
+}
+.mainnotesbody{
+  height: 10vh;
+  border: groove;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.notessubjecthead{
+    font-size: 2rem;
+
+}
+.notesheader{
+    font-size: 20px;
+    font-weight: 500;
+    display: grid;
+    /* place-content: center; */
+}
+.uploadnotesheader{
+    font-size: 20px;
+    font-weight: 500;
+    display: grid;
+    place-content: center;
+}
+.notesform{
+    /* margin: 10px; */
+    position: relative;
+    display: grid;
+    width: 90%;
+    height: 90%;
+    /* place-self: center; */
+}
+.fileuploadclass{
+ width: fit-content;
+    font-size: .91rem;
+    height: fit-content;
+    padding-left: 1rem;
+}
+.notesheader{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5px;
+}
+.uploadfilesbtn{
+  justify-self: end;
+    width: 20%;
+    place-content: center;
+    display: grid;
+    height: 100%;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    background-color: #319d31;
+    cursor: pointer;
+    outline: 0;
+  }
+  .uploadfilesbtn:hover{
+  background-color: #277527;
+
+}
+.mainnotestime {
+  justify-self: end;
+  color: grey;
+}
